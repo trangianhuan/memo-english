@@ -8,17 +8,6 @@
 
 <script>
 import MainApp from './components/MainApp.vue'
-let config = {
-apiKey: "AIzaSyBa52ClshRaZashVd8U79FClWDBd2Rfi7o",
-authDomain: "demorealtimedatabase-a4ba2.firebaseapp.com",
-databaseURL: "https://demorealtimedatabase-a4ba2.firebaseio.com",
-projectId: "demorealtimedatabase-a4ba2",
-storageBucket: "demorealtimedatabase-a4ba2.appspot.com",
-messagingSenderId: "523187674313"
-};
-const appF = firebase.initializeApp(config);
-const dbF = appF.database();
-const post = dbF.ref('posts');
 
 export default {
     name: 'app',

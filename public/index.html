@@ -6,6 +6,29 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+    <script>
+      var config = {
+      apiKey: "AIzaSyBa52ClshRaZashVd8U79FClWDBd2Rfi7o",
+      authDomain: "demorealtimedatabase-a4ba2.firebaseapp.com",
+      databaseURL: "https://demorealtimedatabase-a4ba2.firebaseio.com",
+      projectId: "demorealtimedatabase-a4ba2",
+      storageBucket: "demorealtimedatabase-a4ba2.appspot.com",
+      messagingSenderId: "523187674313"
+      };
+      var appF = firebase.initializeApp(config);
+      var dbF = appF.database();
+      var post = dbF.ref('posts');
+
+      var messageListRef = firebase.database().ref('posts' + '/2018-08-20');
+      var newMessageRef = messageListRef.push();
+      newMessageRef.set({
+        'word': 'english',
+        'mean': 'tieng anh'
+      });
+      // We've appended a new message to the message_list location.
+      var path = newMessageRef.toString();
+      console.log(path);
+    </script>
     <title>memo-english</title>
   </head>
   <body>
