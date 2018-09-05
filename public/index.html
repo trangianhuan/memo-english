@@ -21,13 +21,13 @@
 
       var messageListRef = firebase.database().ref('posts' + '/2018-08-20');
       var newMessageRef = messageListRef.push();
-      newMessageRef.set({
-        'word': 'english',
-        'mean': 'tieng anh'
-      });
+      // newMessageRef.set({
+      //   'word': 'english',
+      //   'mean': 'tieng anh'
+      // });
       // We've appended a new message to the message_list location.
-      var path = newMessageRef.toString();
-      console.log(path);
+      //var path = newMessageRef.toString();
+      //console.log(path);
     </script>
     <title>memo-english</title>
   </head>
