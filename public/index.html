@@ -15,19 +15,7 @@
       storageBucket: "demorealtimedatabase-a4ba2.appspot.com",
       messagingSenderId: "523187674313"
       };
-      var appF = firebase.initializeApp(config);
-      var dbF = appF.database();
-      var post = dbF.ref('posts');
 
-      var messageListRef = firebase.database().ref('posts' + '/2018-08-20');
-      var newMessageRef = messageListRef.push();
-      // newMessageRef.set({
-      //   'word': 'english',
-      //   'mean': 'tieng anh'
-      // });
-      // We've appended a new message to the message_list location.
-      //var path = newMessageRef.toString();
-      //console.log(path);
     </script>
     <title>memo-english</title>
   </head>

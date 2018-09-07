@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
     <MainApp/>
-
   </div>
 </template>
 
@@ -28,9 +26,7 @@ export default {
 
     },
     mounted(){
-        post.on('value', dataSnapshot => {
-            console.log(dataSnapshot.val())
-        });
+
     }
 }
 </script>
